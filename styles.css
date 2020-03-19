@@ -1,0 +1,63 @@
+/* STYLES.CSS */
+
+html, body {
+	height: 100%;
+	width: 100%;
+	background-color: #E6E6E6;
+	margin: 0;
+	padding: 0;
+}
+
+#board {
+	width: 100%;
+	height: auto;
+	margin: 0;
+}
+
+#topRow {
+	width: 100%;
+	height: auto;
+	margin: 0;
+}
+
+#middleRow {
+	width: 100%;
+	height: auto;
+	margin: 0;
+}
+
+#bottomRow {
+	width: 100%;
+	height: auto;
+	margin: 0;
+}
+
+#topLeft, #topCenter, #topRight {
+	width: 33%;
+	height: 33vh;
+	background-color: blue;
+	display: inline-block;
+	margin: 0;
+}
+
+#middleLeft, #middleCenter, #middleRight {
+	width: 33%;
+	height: 33vh;
+	background-color: blue;
+	display: inline-block;
+	margin: 0;
+}
+
+#bottomLeft, #bottomCenter, #bottomRight {
+	width: 33%;
+	height: 33vh;
+	background-color: blue;
+	display: inline-block;
+	margin: 0;
+}
+
+#topLeft:hover, #topCenter:hover, #topRight:hover, 
+#middleLeft:hover, #middleCenter:hover, #middleRight:hover, 
+#bottomLeft:hover, #bottomCenter:hover, #bottomRight:hover {
+	background-color: black;
+}
