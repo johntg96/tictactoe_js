@@ -3,18 +3,29 @@
 html, body {
 	height: 100%;
 	width: 100%;
-	background-color: #E6E6E6;
+	background-color: #515151;
 	margin: 0;
 	padding: 0;
 }
 
-#board {
-	width: 100%;
-	height: auto;
+#mark {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
 	margin: 0;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 30vh;
+	font-size: 10em;
+	font-family: arial;
+
 }
 
-#topRow {
+/*#topRow {
 	width: 100%;
 	height: auto;
 	margin: 0;
@@ -30,34 +41,25 @@ html, body {
 	width: 100%;
 	height: auto;
 	margin: 0;
+}*/
+
+.board {
+  display: flex;                       /* establish flex container */
+  flex-wrap: wrap;                     /* enable flex items to wrap */
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  
 }
 
-#topLeft, #topCenter, #topRight {
-	width: 33%;
-	height: 33vh;
-	background-color: blue;
-	display: inline-block;
-	margin: 0;
+.cell {
+  flex: 0 0 32%;                       /* don't grow, don't shrink, width */
+  height: 32.5vh;
+  width: 32.5vh;
+  margin: .2em .2em;
+  background-color: #D7D7D7;
 }
 
-#middleLeft, #middleCenter, #middleRight {
-	width: 33%;
-	height: 33vh;
-	background-color: blue;
-	display: inline-block;
-	margin: 0;
-}
-
-#bottomLeft, #bottomCenter, #bottomRight {
-	width: 33%;
-	height: 33vh;
-	background-color: blue;
-	display: inline-block;
-	margin: 0;
-}
-
-#topLeft:hover, #topCenter:hover, #topRight:hover, 
-#middleLeft:hover, #middleCenter:hover, #middleRight:hover, 
-#bottomLeft:hover, #bottomCenter:hover, #bottomRight:hover {
-	background-color: black;
+.cell:hover {
+	background-color: #FFFFFF;
 }
